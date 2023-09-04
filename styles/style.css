@@ -1,0 +1,93 @@
+/* G L O B A L - C S S */ 
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+.point {
+  cursor: pointer;
+}
+/* S T A R T - S I D E - B A R - S E C T I O N */
+.sideBar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -295.531px;
+  z-index: 999;
+  display: flex;
+}
+.sideBar .sideBarSection {
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+.sideBar .sideBarSection .sideBarLinks {
+  list-style: none;
+}
+.sideBar .sideBarSection .sideBarLinks li {
+  padding: 8px 0;
+  position: relative;
+}
+.sideBar .sideBarSection .sideBarLinks a {
+  text-decoration: none;
+  color: #fff;
+}
+.sideBar .sideBarSection .sideBarFooter i {
+  cursor: pointer;
+}
+.sideBar .sideBarIcon {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+  max-width: 5rem;
+}
+.sideBar .sideBarIcon .sideBarLogo img {
+  width: 60%;
+}
+.sideBar .sideBarIcon .sideBarOpenClose i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.sideBar .sideBarIcon .sideBarSocial {
+  display: flex;
+  flex-direction: column;
+}
+.sideBar .sideBarIcon .sideBarSocial i {
+  padding-bottom: 5px;
+}
+/* E N D - S I D E - B A R - S E C T I O N */
+
+/* S T A R T - L O A D I N G - P A G E */
+.loading-screen {
+  position: absolute;
+  z-index: 9999;
+  background-color: #0d0d0d;
+  display: flex;
+}
+/* E N D - L O A D I N G - P A G E */
+
+/* S T A R T - S E A R C H - C O N T E N T - S E C T I O N  */
+input::placeholder{
+  color: #6C757D !important;
+}
+/* E N D - S E A R C H - C O N T E N T - S E C T I O N  */
+
+/* S T A R T - L A Y E R - OF - I M A G E  */
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.meal:hover .meal-layer {
+  top: 0;
+}
+/* E N D - L A Y E R - OF - I M A G E  */
+
